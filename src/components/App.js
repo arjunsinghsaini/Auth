@@ -8,18 +8,19 @@
 
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import {Header, Card} from './';
+import {Header, Card, LoginForm} from './';
+import firebase from 'firebase';
 // import Card from './Card';
 
 export default class App extends Component {
 componentWillMount(){
       firebase.initializeApp({
-        apiKey: "<API_KEY>",
-        authDomain: "<PROJECT_ID>.firebaseapp.com",
-        databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-        projectId: "<PROJECT_ID>",
-        storageBucket: "<BUCKET>.appspot.com",
-        messagingSenderId: "<SENDER_ID>",
+        apiKey: "AIzaSyCPYV7pIGRNGsCx230TiwLe2tHPbj79sIQ",
+        authDomain: "auth-109c3.firebaseapp.com",
+        databaseURL: "https://auth-109c3.firebaseio.com",
+        projectId: "auth-109c3",
+        storageBucket: "auth-109c3.appspot.com",
+        messagingSenderId: "741596114223"
       });
 }
 
@@ -28,7 +29,7 @@ componentWillMount(){
             <Header headerText={"Auth"}>
             </Header>
             <Card>
-                <Text>Hello Brother!</Text>
+               
             </Card>
         </View>);
     }
