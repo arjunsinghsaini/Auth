@@ -15,7 +15,7 @@ class LoginForm2 extends Component {
                         onChangeText={email => this.setState({ email })}/>
                 </CardSection>
                 <CardSection>
-                    <Input  secureTextEntry placeholder="Password" label="Password"/>
+                    <Input secureTextEntry placeholder="Password" label="Password"/>
                 </CardSection>
                 <CardSection>
                     <Button>
