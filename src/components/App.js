@@ -8,10 +8,10 @@
 
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import {Header, Card, LoginForm} from './';
+import {Header, Card, LoginForm2} from './';
 import firebase from 'firebase';
-// import Card from './Card';
 
+  
 export default class App extends Component {
 componentWillMount(){
       firebase.initializeApp({
@@ -26,11 +26,9 @@ componentWillMount(){
 
     render() {
         return (<View>
-            <Header headerText={"Auth"}>
+            <Header headerText="Auth">
             </Header>
-            <Card>
-               
-            </Card>
+            <LoginForm2/>
         </View>);
     }
 }
